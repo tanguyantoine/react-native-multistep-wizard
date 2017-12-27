@@ -4,7 +4,7 @@
 
 ### In the top level comonenet add
 
-```
+```js
 import MultiStep from 'react-native-multistep-wizard'
 import StepOne from './StepOne'
 import StepTwo from './StepTwo'
@@ -25,21 +25,20 @@ class Register extends Component{
 
 finish(wizardState){
 //code to be executed when wizard is finished
-        
+
     }
 
 /* render MultiStep */
 render(){
 	return(
-	    <View style={styles.container}>
+    <View style={styles.container}>
 	    <MultiStep steps={steps} onFinish={this.finish}/>
-	    </View>
+    </View>
 	)
 }
-
 ```
 
-### In the wizard step 
+### In the wizard step
 
 ```
 class StepOne extends Component{
@@ -48,27 +47,25 @@ class StepOne extends Component{
 }
 
 nextPreprocess(){
-      
+
   // Save step state for use in other steps of the wizard
   this.props.saveState(0,{key:'value'})
 
   // Go to next step
   this.props.nextFn()
-      
-     
+
+
 }
 
 previousPreprocess(){
-      
+
 
   // Go to previous step
   this.props.prevFn()
-      
-     
+
+
 }
-
 ```
-
 
 ## API
 
