@@ -1,21 +1,32 @@
 {
-	"name": "react-native-multistep-wizard",
-	"version": "0.0.1",
-	"description": "React Native Multistep wizard for creating multistep forms or screens",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [
-		"Multistep",
-		"Wizard",
-  		"android",
-		"ios"
-	],
-	"author": "Vivek Khurana",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/vivekkhurana/react-native-multistep-wizard.git"
-	}
+  "name": "react-native-multistep-wizard",
+  "version": "0.0.1",
+  "description": "React Native Multistep wizard for creating multistep forms or screens",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ."
+  },
+  "keywords": [
+    "Multistep",
+    "Wizard",
+    "android",
+    "ios"
+  ],
+  "author": "Vivek Khurana",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vivekkhurana/react-native-multistep-wizard.git"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-native": "^0.51.0"
+  },
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest": "^22.0.4"
+  }
 }
